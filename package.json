@@ -27,7 +27,6 @@
     "tslint": "tslint typings/*.ts native/*.ts",
     "typescript": "tsc --project ./typings/tests",
     "prepublish": "npm run build",
-    "lint-staged": "lint-staged",
     "dev": "babel-node example/devServer.js"
   },
   "repository": {
@@ -137,13 +136,6 @@
       "<rootDir>/src/primitives"
     ]
   },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "pre-commit": "lint-staged",
   "bundlesize": [
     {
       "path": "./dist/styled-components.min.js",
